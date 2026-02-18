@@ -13,6 +13,21 @@
   --radius-14: 14px;
   
   --shadow-card: 0px 5px 0px #191a23;
+  
+  --animate-scroll: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1440px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

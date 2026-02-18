@@ -28,9 +28,9 @@ const Services = () => {
                 optimization
               </h3>
             </div>
-            <a href="#" className="flex items-center gap-4 group">
-              <img src={arrowIcon} alt="" className="w-10 h-10 group-hover:translate-x-1 transition-transform" />
-              <span className="text-xl text-black">Learn more</span>
+            <a href="#" className="flex items-center gap-4 group cursor-pointer">
+              <img src={arrowIcon} alt="" className="w-10 h-10 group-hover:translate-x-1 transition-transform duration-300" />
+              <span className="text-xl text-black group-hover:opacity-70 transition-opacity duration-300">Learn more</span>
             </a>
           </div>
           <div className="flex-shrink-0">
@@ -49,9 +49,9 @@ const Services = () => {
                 advertising
               </h3>
             </div>
-            <a href="#" className="flex items-center gap-4 group">
-              <img src={arrowIcon} alt="" className="w-10 h-10 group-hover:translate-x-1 transition-transform" />
-              <span className="text-xl text-black">Learn more</span>
+            <a href="#" className="flex items-center gap-4 group cursor-pointer">
+              <img src={arrowIcon} alt="" className="w-10 h-10 group-hover:translate-x-1 transition-transform duration-300" />
+              <span className="text-xl text-black group-hover:opacity-70 transition-opacity duration-300">Learn more</span>
             </a>
           </div>
           <div className="flex-shrink-0">

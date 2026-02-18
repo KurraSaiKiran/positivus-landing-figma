@@ -3,7 +3,7 @@ import minusIcon from '../assets/minus-icon.svg';
 import plusIcon from '../assets/plus-icon.svg';
 
 const WorkingProcess = () => {
-  const [openItem, setOpenItem] = useState<number>(0);
+  const [openItem, setOpenItem] = useState<number | null>(null);
 
   const processItems = [
     {
@@ -51,7 +51,7 @@ const WorkingProcess = () => {
                     <span className="text-[26px] md:text-[30px] font-medium text-black">{item.title}</span>
                   </div>
                   <button
-                    onClick={() => setOpenItem(-1)}
+                    onClick={() => setOpenItem(null)}
                     className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0"
                   >
                     <img src={minusIcon} alt="Collapse" className="w-full h-full" />
