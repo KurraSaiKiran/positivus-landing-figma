@@ -1,75 +1,94 @@
-# React + TypeScript + Vite
+# Positivus Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page built with React, TypeScript, and Tailwind CSS, based on a Figma design.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19.2.0** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS 4.1** - Utility-first CSS framework
+- **React Compiler** - Performance optimization
 
-## React Compiler
+## 📦 Project Structure
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+positivus-landing/
+├── src/
+│   ├── components/
+│   │   ├── Navigation.tsx      # Header navigation
+│   │   ├── Hero.tsx            # Hero section
+│   │   ├── LogoStrip.tsx       # Company logos
+│   │   ├── Services.tsx        # Services showcase
+│   │   ├── WorkingProcess.tsx  # Process steps
+│   │   ├── Testimonials.tsx    # Client testimonials
+│   │   └── Footer.tsx          # Footer section
+│   ├── assets/                 # SVG icons and images
+│   ├── App.tsx                 # Main app component
+│   ├── main.tsx                # Entry point
+│   └── index.css               # Global styles
+├── public/                     # Static assets
+└── index.html                  # HTML template
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Clone the repository
+git clone https://github.com/KurraSaiKiran/positivus-landing-figma.git
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Navigate to project directory
+cd positivus-landing
+
+# Install dependencies
+npm install
 ```
+
+## 🏃 Running the Project
+
+```bash
+# Development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Lint code
+npm run lint
+```
+
+## 🌐 Development Server
+
+After running `npm run dev`, open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 📱 Features
+
+- Fully responsive design
+- Modern UI components
+- Optimized performance with React Compiler
+- Type-safe with TypeScript
+- Fast development with Vite HMR
+- Tailwind CSS for styling
+
+## 🔧 Configuration
+
+- **Vite Config**: `vite.config.ts`
+- **TypeScript Config**: `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`
+- **ESLint Config**: `eslint.config.js`
+- **PostCSS Config**: `postcss.config.js`
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Kurra Sai Kiran**
+- GitHub: [@KurraSaiKiran](https://github.com/KurraSaiKiran)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
